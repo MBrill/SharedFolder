@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<project name="sharedfolder Dateien zentral verwalten und aktualisieren" basedir="." default="all">
+                                                  
+           <!-- Wir bauen ein Target, das Inhalte von _sharedfolder
+		        in die gewünschten Verzeichnisse kopiert. -->
+		   <property name="analysis.dir" location="../Analysis" />
+		   <property name="CompuMath.dir" location="../ComputerorientierteMathematik" />
+		   <property name="datenanalyse.dir" location="../Datenanalyse" />
+		   <property name="empirisch.dir" location="../EmpirischeForschung" />		   				   
+		   <property name="itastoch.dir" location="../ITA - Stochastik" />
+		   <property name="itastoch.dir" location="../ITA - Stochastik" />
+		   <property name="lag.dir" location="../LAG" />
+		   <property name="master.dir" location="../Master" />		   		   		   
+		   <property name="mathegrundlagen.dir" location="../MatheGrundlagen" />		   
+		   <property name="smg.dir" location="../SoftwareManagement" />		   
+		   <property name="stochastik.dir" location="../Stochastik" />
+		   <property name="vda.dir" location="../VDA" />		   		   
+		   <property name="vr.dir" location="VR" />	
+		   <property name="src.dir" location="_sharedfolder" />	
+          
+           <target name="vr">
+              <!-- Wir kopieren die bibtex-files in das aktuelle Verzeichnis. -->
+              <copy todir="${vr.dir}" verbose="true">
+			     <fileset dir = "${src.dir}/..">
+				    <include name="${src.dir}/**" />
+				 </fileset>
+              </copy>
+           </target>
+
+           <target name="vda">
+              <!-- Wir kopieren die bibtex-files in das aktuelle Verzeichnis. -->
+              <echo message = "Copy the files to ${vda.dir}"/>
+              <copy todir="${vda.dir}">
+			     <fileset dir = "_sharedfolder" />
+              </copy>
+           </target>         
+
+</project>

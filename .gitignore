@@ -1,0 +1,23 @@
+# gitignore for the OpenOLAT sharedfolder project
+
+## Editors:
+# WinEdt and vim
+*.bak
+*.sav
+*.prj
+
+*~
+*.un~
+
+# Folders with binaries and not versioned files
+# We do not version the bitmaps!
+Assets/images/
+Assets/downloads/
+
+# We version the datasets, not the PDF describing them and javascript files
+Assets/datasets/daten.pdf
+
+## R section
+R/Assets/images
+R/Assets/downloads
+
