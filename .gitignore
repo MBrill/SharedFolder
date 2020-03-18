@@ -18,6 +18,8 @@ Assets/downloads/
 Assets/datasets/daten.pdf
 
 ## R section
-R/Assets/images
-R/Assets/downloads
+R/Assets/images/
+R/Assets/downloads/
+# Ignore the html done with Rmd - there is an own repo for that
+R/Assets/Rmd/
 
