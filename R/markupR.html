@@ -2,8 +2,8 @@
 <head>
 <title>Datenanalyse mit R -   Dynamische Dokumente in R</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<script type="text/javascript" src="Assets/js/semester.js"></script>
-<link href="../_sharedfolder/Assets/brill.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../Assets/js/semester.js"></script>
+<link href="../Assets/brill.css" rel="stylesheet" type="text/css">
 </head>
 
 <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" >
@@ -11,35 +11,40 @@
 <h1>Dynamische Dokumente und Berichte mit Markup in R</h1>
 <p>Wie k&ouml;nnen wir mit Hilfe von R eine HTML-Seite oder ein Word-Dokument erzeugen, abh&auml;ngig von den Daten und den Operationenen, die wir in R durchgef&uuml;hrt haben? Denken wir einfach an ein Szenario, in dem sich jede Nacht unsere Eingangsdaten ver&auml;ndern und wir am n&auml;chsten Morgen eine HTML-Seite auf dem Server &ouml;ffnen m&ouml;chten mit den Auswertungen der aktuellen Daten. Solche Dokumente k&ouml;nnen wir f&uuml;r unsere eigene Dokumentation einsetzen, f&uuml;r die Zusammenarbeit mit anderen Analysten, aber auch als Kommunikation der Ergebnisse zu Entscheidern.</p>
 <p>Es gibt R-Packages, die genau dies m&ouml;glich machen. Hier ist &uuml;brigens <em>RStudio</em> wirklich zu empfehlen. Nat&uuml;rlich geht dies alles in der Konsole. Aber die Packages sind hervorragend in RStudio integriert, da sie meist von den Entwicklern von RStudio und Tidyverse bearbeitet werden. </p>
+<p>&Uuml;brigens: RStudio und Anaconde, eine der wichtigsten Python-Distributionen, wird mehr oder weniger vom gleichen Team entwickelt. Das bedeutet mit diesen Techniken werden Sie auch in dieser Richtung zukunftssicher!</p>
 <h2>Literatur</h2>
-<p><img src="../_sharedfolder/Assets/images/pdf.jpg" /><a href="../Assets/downloads/dynamicReports.pdf" target="_blank">Ausschnitt aus &quot;R in Action&quot;</a></p>
+<p><img src="../Assets/images/pdf.jpg" /><a href="Assets/downloads/dynamicReports.pdf" target="_blank">Ausschnitt aus &quot;R in Action&quot;</a></p>
 <p>Eine hervorragende Darstellung ist auch in R for Data Science zu finden, mit vielen Links:</p>
-<p><img src="../_sharedfolder/Assets/images/weblink.jpg" /><a href="https://r4ds.had.co.nz/r-markdown.html" target="_blank"> R for Data Science</a></p>
+<p><img src="../Assets/images/weblink.jpg" /><a href="https://r4ds.had.co.nz/r-markdown.html" target="_blank"> R for Data Science</a></p>
 <h2>Handouts und Beispiele</h2>
-<p>Hier die Folien zu R Markdown aus der Vorlesung:</p>
-<p><img src="../_sharedfolder/Assets/images/pdf.jpg" /><a href="../Assets/downloads/R4+Rmd.pdf" target="_blank">R Markdown</a></p>
-<p><img src="../_sharedfolder/Assets/images/html.png" /> <a href="../Assets/downloads/example.html" target="_blank">Mit Knit in RStudio erzeugtes Beispiel</a></p>
-<p><img src="../_sharedfolder/Assets/images/download.png" /><a href="../Assets/downloads/example.Rmd" target="_blank">Markup f&uuml;r das Beispiel</a></p>
-<p><a href="#top"><img src="../_sharedfolder/Assets/images/totop.gif" alt="Nach oben" border="0"></a></p>
+<p>Zum Thema Rmd haben wir Folien und insbesondere Live-Beispiele betrachtet:</p>
+<p><img src="../Assets/images/pdf.jpg" /><a href="Assets/downloads/R4+Rmd.pdf" target="_blank">R Markdown</a></p>
+<p>Hier das erzeugte Beispiel und der Quellcode dazu (in RStudio &ouml;ffnen):</p>
+<p><img src="../Assets/images/html.png" /> <a href="Assets/Rmd/example.html" target="_blank">Mit Knit in RStudio erzeugtes Beispiel</a></p>
+<p><img src="../Assets/images/download.png" /><a href="Assets/Rmd/example.Rmd" target="_blank">Markup f&uuml;r das Beispiel</a></p>
+<p><a href="#top"><img src="../Assets/images/totop.gif" alt="Nach oben" border="0"></a></p>
 <h2>Ausgabeformate f&uuml;r R Markdown</h2>
-<p>Neben HTML, PDF und Word k&ouml;nnen wir noch eine ganze Reihe von Ausgabeformaten erstellen. Auch hier lohnt sich ein Blick in das Buch &quot;R for Data Science&quot;.</p>
-<p><img src="../_sharedfolder/Assets/images/pdf.jpg" /><a href="../Assets/downloads/R5+RmdFormate.pdf" target="_blank">Folien zu den Ausgabeformaten</a></p>
-<p><img src="../_sharedfolder/Assets/images/html.png" /><a href="../Assets/downloads/newNotebook.nb.html" target="_blank">Ein Beispiel f&uuml;r ein Notebook</a></p>
-<p><img src="../_sharedfolder/Assets/images/download.png" /> <a href="../Assets/downloads/exampleGithub.Rmd" target="_blank">GitHub-Dokument</a></p>
+<p>Neben HTML, PDF und Word k&ouml;nnen wir noch eine ganze Reihe von Ausgabeformaten erstellen. Auch hier lohnt sich ein Blick in den Auszug aus &quot;R for Data Science&quot; ganz oben auf dieser Seite!</p>
+<p><img src="../Assets/images/pdf.jpg" /><a href="Assets/downloads/R5+RmdFormate.pdf" target="_blank">Folien zu den Ausgabeformaten</a></p>
+<p>Hier zwei Beispiele. Ein Notebook und ein Dokument, das f&uuml;r den Einsatz in GitHub formatiert ist:</p>
+<p><img src="../Assets/images/html.png" /><a href="Assets/Rmd/newNotebook.nb.html" target="_blank">Ein Beispiel f&uuml;r ein Notebook</a></p>
+<p>Wenn wir GitHub verwenden k&ouml;nnen wir mit Rmd ein Markdown-Dokument erstellen, so dass dies in Github dargestellt wird:</p>
+<p><img src="../Assets/images/download.png" /> <a href="Assets/Rmd/exampleGitHub.zip">Quelle und Ergebnis f&uuml;r GitHub-Markdown</a></p>
 <p>Wir k&ouml;nnen Pr&auml;sentationen erstellen, einmal f&uuml;r den Browser und mit LaTeX und Beamer auch im PDF-Format. Hier zwei Beispiele f&uuml;r den Browser:</p>
-<p><img src="../_sharedfolder/Assets/images/html.png" /><a href="../exampleIOSlides.html" target="_blank">ioslides</a></p>
-<p><img src="../_sharedfolder/Assets/images/html.png" /><a href="../exampleSlidy.html" target="_blank">Slidy</a></p>
-<p>Mit dem Package flexdashboard k&ouml;nnen wir Dashboards f&uuml;r den Browser erstellen. Im Dokument, das unten verlinkt ist gibt es einen weiteren Tab, in dem mit Leaflet (einem sogenannten HTMLWidget) eine OpenStreetMap-Karte erstellt wurde. Den Code zu diesem Tab finden Sie in die Folien:</p>
-<p><img src="../_sharedfolder/Assets/images/html.png" /><a href="../exampleDashboard.html" target="_blank">Dashboard</a></p>
-<p>Mit der Markup-L&ouml;sung k&ouml;nnen wir Dokumente erzeugen, die sich, wenn sich die Daten ver&auml;ndern, ebenfalls anpassen. Aber es geht noch besser - wir k&ouml;nnen HTML-Seiten erzeugen und R als Server-Proze&szlig; starten. Die L&ouml;sung daf&uuml;r ist <em>Shiny</em>. Mit R-Code erzeugen wir interaktive HTML-Seiten. Hier finden Sie Links zu den Tutorials und ein Beispiel:</p>
-<p><img src="../_sharedfolder/Assets/images/html.png" /> <a href="../Assets/downloads/app.7z" target="_blank">Ein mit Shiny erstelltes Beispiel</a></p>
-<p><img src="../_sharedfolder/Assets/images/weblink.jpg" /><a href="https://shiny.rstudio.com/tutorial/" target="_blank">Tutorials zu Shiny</a></p>
-<p><a href="#top"><img src="../_sharedfolder/Assets/images/totop.gif" alt="Nach oben" border="0"></a></p>
+<p><img src="../Assets/images/html.png" /><a href="Assets/Rmd/exampleIOSlides.html" target="_blank">ioslides</a></p>
+<p><img src="../Assets/images/html.png" /><a href="Assets/Rmd/exampleSlidy.html" target="_blank">Slidy</a></p>
+<p>Dashboards sind eine sehr gute M&ouml;glichkeit, um unseren Anwendern unsere Ergebnisse zu kommumizieren. Daf&uuml;r verwenden wir das Package <em>flexdashboard. </em> Im Dokument, das unten verlinkt ist gibt es einen weiteren Tab, in dem mit Leaflet (einem sogenannten HTMLWidget) eine OpenStreetMap-Karte erstellt wurde. Den Code zu diesem Tab finden Sie in den Folien!</p>
+<p><img src="../Assets/images/html.png" /><a href="Assets/Rmd/exampleDashboard.html" target="_blank">Dashboard</a></p>
+<p>Mit der Markup-L&ouml;sung der Dashboards k&ouml;nnen wir Dokumente erzeugen, die sich, wenn sich die Daten ver&auml;ndern, ebenfalls anpassen. Aber es geht noch besser - wir k&ouml;nnen HTML-Seiten erzeugen und R als Server-Proze&szlig; starten. Die L&ouml;sung daf&uuml;r ist <em>Shiny</em>. Mit R-Code erzeugen wir interaktive HTML-Seiten f&uuml;r unsere Anwender. Hier finden Sie Links zu den Tutorials und ein Beispiel. </p>
+<p>Speichern Sie das Archiv und &ouml;ffnen Sie es in RStudio. Wenn Sie diese Datei im Editor ge&ouml;ffnet haben finden Sie rechts oben im Editorfenster &quot;Run App&quot;. F&uuml;hren Sie damit die App aus!</p>
+<p><img src="../Assets/images/download.png" /> <a href="Assets/Rmd/app.7z" target="_blank">Ein mit Shiny erstelltes Beispiel</a></p>
+<p><img src="../Assets/images/weblink.jpg" /><a href="https://shiny.rstudio.com/tutorial/" target="_blank">Tutorials zu Shiny</a></p>
+<p><a href="#top"><img src="../Assets/images/totop.gif" alt="Nach oben" border="0"></a></p>
 <hr>
 <font size="-2">
 <p><script type="text/javascript">getSemester()</script></p>
 <font size="-2"><p>Letzte &Auml;nderung: 
-  <!-- #BeginDate format:Ge1 -->06.06.2019<!-- #EndDate --></p>
+  <!-- #BeginDate format:Ge1 -->19.03.2020<!-- #EndDate --></p>
 </font>
 </body>
 </html>
