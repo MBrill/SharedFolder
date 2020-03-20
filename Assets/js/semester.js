@@ -1,4 +1,4 @@
-var theSemester = { semester : "Wintersemester 2019/20" };
+var theSemester = { semester : "Sommersemester 2020" };
 
 // Ausgabe des aktuellen Semesters in eine geöffnete HTML-Datei
 function getSemester() 
