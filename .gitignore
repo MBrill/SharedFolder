@@ -21,3 +21,6 @@ R/Assets/images/
 R/Assets/downloads/
 # Ignore the html done with Rmd - there is an own repo for that
 R/Assets/Rmd/
+
+## OLAT Selbsttests
+**/SokoR1/
