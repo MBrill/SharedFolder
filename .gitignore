@@ -5,7 +5,6 @@
 *.bak
 *.sav
 *.prj
-
 *~
 *.un~
 
@@ -22,18 +21,3 @@ R/Assets/images/
 R/Assets/downloads/
 # Ignore the html done with Rmd - there is an own repo for that
 R/Assets/Rmd/
-
-
-## Rmd files
-Rmd/*.html
-# Ignore R files
-Rmd/.Rhistory
-Rmd/*.md
-# Shiny example
-Rmd/**/Example/
-# Daten ignorieren, das sind Kopien!
-Rmd/data/
-# images werden erzeugt, ignorieren
-Rmd/images/
-# Github-example: Ergebnis ignorieren
-Rmd/exampleGithub_files/
