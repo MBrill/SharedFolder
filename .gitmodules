@@ -1,0 +1,3 @@
+[submodule "RMarkdown"]
+	path = RMarkdown
+	url = https://github.com/MBrill/RMarkdown
