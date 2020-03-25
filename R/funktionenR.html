@@ -3,7 +3,7 @@
 <title>Software-Entwicklung mit R</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <script type="text/javascript" src="../Assets/js/semester.js"></script>
-<link href="..//Assets/brill.css" rel="stylesheet" type="text/css">
+<link href="../Assets/brill.css" rel="stylesheet" type="text/css">
 </head>
 
 <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" >
@@ -20,13 +20,14 @@
   <li>Fehlersuche</li>
 </ul>
 <p><em><img src="../Assets/images/video.gif" /> <a href="https://youtu.be/QHv4JRxVj4A" target="_blank">R als Programmiersprache</a></em></p>
-<p>Ein Blick wert ist das neue Package <em>purrr</em> aus Tidyverse, das hervorragende Alternativen f&uuml;r <em>apply</em> bietet.</p>
+<p>Wenn Sie Funktionen implementieren, die in einer Tidyverse Pipeline einsetzbar sein sollen m&uuml;ssen Sie darauf achten, dass als Argument ein data.frame oder noch besser ein tibble &uuml;bergeben wird. Auch das Ergebnis der Funktion muss in diesem Fall ein tibble sein. Das ist unmittelbar klar, denn sonst erzeugen wir Nebeneffekte und insbesondere beenden wir die Pipeline.</p>
+<p>Im Tidyverse-Package purrr gibt es hervorragende Alternativen zu apply und tapply!</p>
 <p><a href="#top"><img src="../Assets/images/totop.gif" alt="Nach oben" border="0"></a></p>
 <hr>
 <font size="-2">
 <p><script type="text/javascript">getSemester()</script></p>
 <font size="-2"><p>Letzte &Auml;nderung: 
-  <!-- #BeginDate format:Ge1 -->19.03.2020<!-- #EndDate --></p>
+  <!-- #BeginDate format:Ge1 -->25.03.2020<!-- #EndDate --></p>
 </font>
 </body>
 </html>
