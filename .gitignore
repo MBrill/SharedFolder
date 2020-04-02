@@ -19,8 +19,14 @@ Assets/datasets/daten.pdf
 ## R section
 R/Assets/images/
 R/Assets/downloads/
+R/Assets/exercises/
 # Ignore the html done with Rmd - there is an own repo for that
 R/Assets/Rmd/
+
+## Tableau section
+Tableau/Assets/exercises/
+Tableau/Assets/images/
+Tableau/Assets/downloads/
 
 ## OLAT Selbsttests
 **/SokoR1/
