@@ -23,7 +23,16 @@ R/Assets/exercises/
 # Ignore the html done with Rmd - there is an own repo for that
 R/Assets/Rmd/
 
-## Tableau section
+# Python section
+Python/Assets/images/
+Python/Assets/downloads/
+Python/Assets/exercises/
+
+# Jupyter section
+Jupyter/html
+Jupyter/.ipynb_checkpoints
+
+# Tableau section
 Tableau/Assets/exercises/
 Tableau/Assets/images/
 Tableau/Assets/downloads/
