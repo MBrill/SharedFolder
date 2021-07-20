@@ -1,3 +1,6 @@
 [submodule "RMarkdown"]
 	path = RMarkdown
 	url = https://github.com/MBrill/RMarkdown
+[submodule "Jupyter"]
+	path = Jupyter
+	url = https://github.com/MBrill/Jupyter
