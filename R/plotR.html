@@ -9,7 +9,33 @@
 <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" >
 <a name="top" id="top"></a>
 <h1>Grafische Ausgaben  mit R</h1>
-<p>Mit R k&ouml;nnen wir auf verschiedene Art und Weise grafische Ausgaben erzeugen. Einmal mit den &quot;klassischen&quot; Funktionen, und mit dem neuen Package <em>ggplot</em>, das zu <em>Tidyverse</em> geh&ouml;rt. Das Package plotly erzeugt grafische Ausgaben mit den htmlwidgets, die wir noch betrachten werden. plotly ist auch deshalb interessant da diese JavaScript-L&ouml;sung auch in Python verf&uuml;gbar ist.</p>
+<p>Mit R k&ouml;nnen wir auf verschiedene Art und Weise grafische Ausgaben erzeugen. Einmal mit den &quot;klassischen&quot; Funktionen, und mit dem  Package <em>ggplot</em>2, das zu <em>Tidyverse</em> geh&ouml;rt. Das Package <em>plotly</em> erzeugt grafische Ausgaben mit den <em>htmlwidgets</em>, die wir noch betrachten werden. plotly ist  auch in Python verf&uuml;gbar, was diese L&ouml;sung noch interessanter macht. Wir konzentrieren uns auf ggplot2 und plotly, die &quot;klassische&quot; Methode mit der Funktion plot finden Sie ganz unten auf dieser Seite.</p>
+<h2>ggplot2</h2>
+<p><em>ggplot</em> implementiert die &quot;Grammar of Graphics&quot;, wir denken in Attributen der Daten und wie wir sie auf grafische Primitive und Attribute abbilden. Sie finden hier einen Text zu ggplot als Markdown-Notebook, ein Video und die Folien in der Vorlesung. Die Folien erhalten Sie sowohl als Markdown-Notebook als auch als PDF.</p>
+<p><em><img src="../Assets/images/html.png" alt="" /></em> <a href="https://mbrill.github.io/RMarkdown/ggplotInfo.nb.html" target="_blank">Einf&uuml;hrung in ggplot als Notebook</a></p>
+<p>Hier finden Sie  ein Video zu diesem Thema:</p>
+<p><em><img src="../Assets/images/video.gif" alt="ggplot2" /> <a href="https://www.youtube.com/watch?v=5Guy2Vund4I" target="_blank">Einf&uuml;hrung in ggplot</a></em></p>
+<p>Hier finden Sie die Handouts der Folien aus der Vorlesung:</p>
+<p><em><img src="../Assets/images/html.png" alt="" /></em> <a href="https://mbrill.github.io/RMarkdown/ggplotInfoSlides.html" target="_blank">Handouts: Einf&uuml;hrung in ggplot</a></p>
+<p><em><img src="../Assets/images/pdf.jpg" alt="" /></em> <a href="Assets/downloads/ggplot.pdf" target="_blank">Handouts: Einf&uuml;hrung in ggplot</a></p>
+<p>Eine gute Darstellung (nicht nur) von <em>ggplot</em> finden Sie in &quot;R for Data Science&quot;. Lesen Sie die hier verlinkten Abschnitte und bearbeiten Sie die Aufgaben, die Sie am Ende dieser Abschnitte finden!</p>
+<p><img src="../Assets/images/weblink.jpg" /> <a href="https://r4ds.had.co.nz/data-visualisation.html" target="_blank">R for Data Science: Data Visualization</a></p>
+<p><img src="../Assets/images/weblink.jpg" /> <a href="https://r4ds.had.co.nz/graphics-for-communication.html" target="_blank">R for Data Science: Graphics for Communication</a></p>
+<p><a href="#top"><img src="../Assets/images/totop.gif" alt="Nach oben" border="0"></a></p>
+<h2>plotly</h2>
+<p>Mit <em>plotly</em> gibt es eine weitere moderene M&ouml;glichkeit Grafikausgaben zu erstellen. Auch diese Bibliothek orientiert sich an der Grammar of Graphics. Und wir k&ouml;nnen Grafiken aus <em>ggplot</em> direkt mit der Funktion <em>ggplotly</em> in eine plotly-L&ouml;sung umwandeln. Eigentlich ist <em>plotly</em> eine JavaScript-Bibliothek, die wir aus R verwenden k&ouml;nnen.</p>
+<p><em><img src="../Assets/images/html.png" alt="" /></em> <a href="https://mbrill.github.io/RMarkdown/plotlyInfo.nb.html" target="_blank">Einf&uuml;hrung in plotly als Notebook</a></p>
+<p>Hier finden Sie die Handouts der Folien aus der Vorlesung als Markdown und als PDF:</p>
+<p><em><img src="../Assets/images/html.png" alt="" /></em> <a href="https://mbrill.github.io/RMarkdown/plotlyInfoSlides.html" target="_blank">Handouts: Einf&uuml;hrung in plotly</a></p>
+<p><em><img src="../Assets/images/pdf.jpg" alt="" /></em> <a href="Assets/downloads/plotly.pdf" target="_blank">Handouts: Einf&uuml;hrung in plotly</a></p>
+<p>Wie schon in den Markdown-Texten erw&auml;hnt ist das Buch von Sievert eine hervorragende Referenz zu <em>plotly</em>. Einen Link auf die Online-Version dieses Buchs finden Sie in den Seiten mit Links auf die E-Books. Und hier die Webseiten auf plotly.com zu <em>plotly in R</em>:</p>
+<p><img src="../Assets/images/weblink.jpg" width="96" height="63"> <a href="https://plotly.com/r/" target="_blank">Plotly R Open Source Graphing Library</a></p>
+<h2><a href="#top"><img src="../Assets/images/totop.gif" alt="Nach oben" border="0"></a></h2>
+<h2>&Uuml;bungsaufgaben</h2>
+<p>&Uuml;bungsaufgaben zu diesem Thema:</p>
+<p><img src="../Assets/images/pdf.jpg" alt="" width="64" height="64"><a href="Assets/exercises/blattPlot.pdf" target="_blank">Grafische Ausgabe mit ggplot und plotly</a></p>
+<p><img src="../Assets/images/pdf.jpg" alt="" width="64" height="64"><a href="Assets/exercises/blattPlot+sol.pdf" target="_blank">L&ouml;sungen</a></p>
+<h2><a href="#top"><img src="../Assets/images/totop.gif" alt="Nach oben" border="0"></a></h2>
 <h2>Grafik mit plot</h2>
 <p>Die Funktion plot ist schon immer Bestandteil von R. </p>
 <h3>Video</h3>
@@ -23,39 +49,13 @@
   <li>Ausgaben von mehrdimensionalen Daten mit <em>contour</em> und <em>persp</em></li>
   <li>Export von Grafiken in Bitmaps</li>
 </ul>
-<p><em><img src="../Assets/images/video.gif" /> <a href="https://youtu.be/bfyRzJ5nXk4" target="_blank">Grafische Ausgaben mit R</a></em></p>
-<h2>ggplot</h2>
-<p>ggplot ist am Anfang etwas gew&ouml;hnungsbed&uuml;rftig, aber wenn man sich darauf einl&auml;sst kann man damit hervorragend arbeiten. Der gro&szlig;e Vorteil ist auch, dass ggplot in tidyverse integriert ist.</p>
-<p><em><img src="../Assets/images/html.png" alt="" /></em> <a href="https://mbrill.github.io/RMarkdown/ggplotInfo.html" target="_blank">Einf&uuml;hrung in ggplot</a></p>
-<p><em><img src="../Assets/images/html.png" alt="" /></em> <a href="https://mbrill.github.io/RMarkdown/ggplotInfo.nb.html" target="_blank">Einf&uuml;hrung in ggplot als Notebook</a></p>
-<p>Es gibt ein Video zu diesem Thema:</p>
-<p><em><img src="../Assets/images/video.gif" alt="ggplot2" /> <a href="https://www.youtube.com/watch?v=5Guy2Vund4I" target="_blank">Einf&uuml;hrung in ggplot</a></em></p>
-<p>Hier finden Sie die Handouts der Folien aus der Vorlesung als Markdown und als PDF:</p>
-<p><em><img src="../Assets/images/html.png" alt="" /></em> <a href="https://mbrill.github.io/RMarkdown/ggplotInfoSlides.html" target="_blank">Handouts: Einf&uuml;hrung in ggplot</a></p>
-<p><em><img src="../Assets/images/pdf.jpg" alt="" /></em> <a href="Assets/downloads/ggplot.pdf" target="_blank">Handouts: Einf&uuml;hrung in ggplot</a></p>
-<p>Eine gute Darstellung (nicht nur) von ggplot finden Sie in &quot;R for Data Science&quot;. Lesen Sie die hier verlinkten Abschnitte und bearbeiten Sie die Aufgaben, die Sie am Ende dieser Abschnitte finden!</p>
-<p><em><img src="../Assets/images/weblink.jpg" /> <a href="https://r4ds.had.co.nz/data-visualisation.html" target="_blank">R for Data Science</a></em><a href="https://r4ds.had.co.nz/data-visualisation.html">: Data Visualization</a></p>
-<p><em><img src="../Assets/images/weblink.jpg" /> <a href="https://r4ds.had.co.nz/graphics-for-communication.html" target="_blank">R for Data Science</a></em><a href="https://r4ds.had.co.nz/data-visualisation.html">: Graphics for Communication</a></p>
-<p><a href="#top"><img src="../Assets/images/totop.gif" alt="Nach oben" border="0"></a></p>
-<h2>plotly</h2>
-<p>Mit plotly gibt es eine weitere M&ouml;glichkeit Grafikausgaben zu erstellen. Auch diese Bibliothek orientiert sich an der grammar of graphics. Und wir k&ouml;nnen Grafiken aus ggplot direkt mit der Funktion ggplotly umwandleln. Eigentlich ist plotly eine JavaScript-Bibliothek, die wir aus R verwenden k&ouml;nnen. Es gibt eine parallele Implementierung f&uuml;r Python.</p>
-<p><em><img src="../Assets/images/html.png" alt="" /></em> <a href="https://mbrill.github.io/RMarkdown/plotlyInfo.html" target="_blank">Einf&uuml;hrung in plotly</a></p>
-<p><em><img src="../Assets/images/html.png" alt="" /></em> <a href="https://mbrill.github.io/RMarkdown/plotlyInfo.nb.html" target="_blank">Einf&uuml;hrung in plotly als Notebook</a></p>
-<p>Hier finden Sie die Handouts der Folien aus der Vorlesung als Markdown und als PDF:</p>
-<p><em><img src="../Assets/images/html.png" alt="" /></em> <a href="https://mbrill.github.io/RMarkdown/plotlyInfoSlides.html" target="_blank">Handouts: Einf&uuml;hrung in plotly</a></p>
-<p><em><img src="../Assets/images/pdf.jpg" alt="" /></em> <a href="Assets/downloads/plotly.pdf" target="_blank">Handouts: Einf&uuml;hrung in plotly</a></p>
-<p>Wie schon in den Markdown-Texten erw&auml;hnt ist das Buch von Sievert eine hervorragende Referenz zu plotly. Einen Link auf die Online-Version dieses Buchs finden Sie in den E-Books. Und hier die Webseiten auf plotly.com zu Plotly in R:</p>
-<p><img src="../Assets/images/weblink.jpg" width="96" height="63"> <a href="https://plotly.com/r/" target="_blank">Plotly R open Source Graphing Library</a></p>
-<h2>&Uuml;bungsaufgaben</h2>
-<p>&Uuml;bungsaufgaben zu diesem Thema:</p>
-<p><img src="../Assets/images/pdf.jpg" alt="" width="64" height="64"><a href="Assets/exercises/blattPlot.pdf" target="_blank">Grafische Ausgabe mit ggplot und plotly</a></p>
-<p><img src="../Assets/images/pdf.jpg" alt="" width="64" height="64"><a href="Assets/exercises/blattPlot+sol.pdf" target="_blank">L&ouml;sungen</a></p>
+<p><em><img src="../Assets/images/video.gif" alt="" /> <a href="https://youtu.be/bfyRzJ5nXk4" target="_blank">Grafische Ausgaben mit R</a></em></p>
 <p><a href="#top"><img src="../Assets/images/totop.gif" alt="Nach oben" border="0"></a></p>
 <hr>
 <font size="-2">
 <p><script type="text/javascript">getSemester()</script></p>
 <font size="-2"><p>Letzte &Auml;nderung: 
-  <!-- #BeginDate format:Ge1 -->12.10.2021<!-- #EndDate --></p>
+  <!-- #BeginDate format:Ge1 -->08.03.2022<!-- #EndDate --></p>
 </font>
 </body>
 </html>
