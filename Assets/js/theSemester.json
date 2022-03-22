@@ -1,2 +1,1 @@
-var theSemester = { semester : "Wintrsemester 2021/22"};
-
+var theSemester = { semester : "Sommersemester 2022"};

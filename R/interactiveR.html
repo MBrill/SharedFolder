@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Datenanalyse mit R -   Dynamische Dokumente in R</title>
+<title>Datenanalyse mit R -   Interaktiviv&auml;t auf dem Client</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <script type="text/javascript" src="../Assets/js/semester.js"></script>
 <link href="../Assets/brill.css" rel="stylesheet" type="text/css">
@@ -9,32 +9,20 @@
 <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" >
 <a name="top" id="top"></a>
 <h1>Interaktive Dokumente</h1>
-<p>Wir k&ouml;nnen in unsere mit RMarkdown erstellten Dokumente auf zwei Arten interaktive Elemente hinzuf&uuml;gen. Einmal k&ouml;nnen wir mit dem Package htmlwidgets Javascript-Bibliotheken in die HTML-Ausgabe integrieren. Noch besser sind Shiny-Apps - dies sind Web-Anwendungen mit einem User Interface als HTML-Dokument und R-Code im Backend.</p>
+<p>Mit den sogenannten HTML-Widgets k&ouml;nnen wir Webpages erzeugen, die mit Javascript angereichert sind und den Benutzern Interaktiviv&auml;t bieten. Das machen wir ohne eine Zeile Javascript.</p>
 <h2>HTML-Widgets</h2>
-<p>Mit HTML-Widgets k&ouml;nnen wir auf der Client-Seite, im Browser, interaktive Elemente einbringen.</p>
 <p><img src="../Assets/images/pdf.jpg" alt="" /><a href="Assets/downloads/R6+widgets.pdf" target="_blank">HTMLWidgets</a></p>
-<p><img src="../Assets/images/html.png" alt="" /> <a href="https://mbrill.github.io/RMarkdown/exampleHTMLWidgets.html" target="_blank">HTMLWidgets</a></p>
+<p>Hier finden Sie ein Notebook mit den Beispielen aus den Folien:</p>
 <p><img src="../Assets/images/html.png" alt="" /> <a href="https://mbrill.github.io/RMarkdown/exampleHTMLWidgets.nb.html" target="_blank">Notebook-Version HTMLWidgets</a></p>
-<p><img src="../Assets/images/html.png" alt="" /> <a href="https://mbrill.github.io/RMarkdown/exampleDashWidgets.html" target="_blank">Dashboard mit HTMLWidgets</a></p>
-<p><img src="../Assets/images/html.png" alt="" /> <a href="https://mbrill.github.io/RMarkdown/exampleDashWidgets.nb.html" target="_blank">Notebook-Version Dashboard mit HTMLWidgets</a></p>
-<h2>Shiny</h2>
-<p>Mit einer Shiny-App erhalten wir Interaktivit&auml;t auf dem Server. Arbeiten wir lokal, dann wird beim Ausf&uuml;hren einer Shiny-App ein HTTPD-Server gestartet, und im Browser finden wir das Ergebnis. Shiny kann mit HTML-Widgets zusammenarbeiten.</p>
-<p><img src="../Assets/images/pdf.jpg" alt="" /><a href="Assets/downloads/R7+Shiny.pdf" target="_blank">Web-Anwendungen mit Shiny</a></p>
-<p><img src="../Assets/images/download.png" width="64" height="64"><a href="Assets/Rmd/Diamonds.zip">Quellcode f&uuml;r unser Hello World</a></p>
-<p><img src="../Assets/images/download.png" alt="" width="64" height="64"><a href="Assets/Rmd/mpg.zip">Eine Shiny-App mit Boxplots</a></p>
-<p><img src="../Assets/images/download.png" alt="" width="64" height="64"><a href="Assets/Rmd/dashboard.zip">Ein Shiny-Dashboard</a></p>
-<p><img src="../Assets/images/download.png" alt="" width="64" height="64"><a href="Assets/Rmd/plotlyShiny.zip">Kombination von plotly und Shiny</a></p>
-<p><img src="../Assets/images/download.png" alt="" width="64" height="64"><a href="Assets/Rmd/plotlyPCShiny.zip">Parallele Koordinaten mit Shiny</a></p>
-<h2>Literatur</h2>
-<p>Insbesondere zu Shiny gibt es einige B&uuml;cher, die als Online-Version verf&uuml;gbar sind.</p>
-<p><img src="../Assets/images/weblink.jpg" alt="" /> <a href="https://mastering-shiny.org/" target="_blank">Mastering Shiny</a> von Hadley Wickham</p>
-<p><img src="../Assets/images/weblink.jpg" alt="" /> <a href="https://plotly-r.com/" target="_blank">Interactive web-based data visualization with R, plotly, and shiny</a> von Carson Sievert</p>
-<p><a href="#top"><img src="../Assets/images/totop.gif" alt="Nach oben" border="0"></a></p>
+<p>Solche interaktiven Elemente eignen sich hervorragend f&uuml;r Dashboards. Hier finden Sie ein Dashboard mit den Beispielen aus dem Notebook:</p>
+<p><img src="../Assets/images/weblink.jpg" alt="" /> <a href="https://mbrill.github.io/RMarkdown/exampleDashWidgets.html" target="_blank"> Dashboard mit HTMLWidgets</a></p>
+<p>In Dashboards ist die Verwendung von plotly immer eine gute wahl. Im folgenden Beispiel finden Sie das gleiche Notebook wie eben, aber die Grafiken sind mit plotly erstellt.</p>
+<p><img src="../Assets/images/html.png" alt="" /> <a href="https://mbrill.github.io/RMarkdown/exampleDashboardmitPlotly.html" target="_blank">Notebook-Version Dashboard mit plotly</a></p>
 <hr>
 <font size="-2">
 <p><script type="text/javascript">getSemester()</script></p>
 <font size="-2"><p>Letzte &Auml;nderung: 
-  <!-- #BeginDate format:Ge1 -->04.05.2021<!-- #EndDate --></p>
+  <!-- #BeginDate format:Ge1 -->22.03.2022<!-- #EndDate --></p>
 </font>
 </body>
 </html>
