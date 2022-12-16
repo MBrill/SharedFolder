@@ -1,4 +1,4 @@
-var theSemester = { semester : "Sommersemester 2022"};
+var theSemester = { semester : "Wintersemester 2022/23"};
 
 // Ausgabe des aktuellen Semesters in eine geöffnete HTML-Datei
 function getSemester() 

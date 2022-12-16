@@ -10,10 +10,13 @@
 <a name="top" id="top"></a>
 <h1>Dynamische Dokumente und Berichte mit Markdown in R</h1>
 <p>Wie k&ouml;nnen wir mit Hilfe von R eine HTML-Seite oder ein Word-Dokument erzeugen, abh&auml;ngig von den Daten und den Operationenen, die wir in R durchgef&uuml;hrt haben? Denken wir einfach an ein Szenario, in dem sich jede Nacht unsere Eingangsdaten ver&auml;ndern und wir am n&auml;chsten Morgen eine HTML-Seite auf dem Server &ouml;ffnen m&ouml;chten mit den Auswertungen der aktuellen Daten. Solche Dokumente k&ouml;nnen wir f&uuml;r unsere eigene Dokumentation einsetzen, f&uuml;r die Zusammenarbeit mit anderen Analysten, aber f&uuml;r die Kommunikation der Ergebnisse zu Entscheidern.</p>
+<<<<<<< HEAD
 <p>Es gibt R-Packages, die genau dies m&ouml;glich machen. Hier ist &uuml;brigens <em>RStudio</em> wirklich zu empfehlen. Nat&uuml;rlich geht dies alles in der Konsole. Aber die Packages sind hervorragend in RStudio integriert, da sie meist von den Entwicklern von RStudio und Tidyverse bearbeitet werden. </p>
 <p>&Uuml;brigens: RStudio und Anaconda, eine der wichtigsten Python-Distributionen im Bereich des Data Science, wird mehr oder weniger vom gleichen Team entwickelt. Das bedeutet mit diesen Techniken werden Sie auch in dieser Richtung zukunftssicher!</p>
 <h2>Codierung</h2>
 <p>Hier nochmals der Hinweis: die Codierung der Beispiele, die mit RMarkdown erzeugt werden ist korrekt. Warum OpenOLAT dies nicht korrekt darstellt ist nicht klar. Wenn Sie die Dateien lokal abspeichern und &ouml;ffnen werden die Umlaute und andere  Zeichen korrekt dargestellt.</p>
+<p>Es gibt R-Packages, die genau dies m&ouml;glich machen. Am Besten arbeiten wir hier in RStudio, die Werkzeuge sind hier hervorragend integriert.</p>
+>>>>>>> develop
 <h2>Handouts</h2>
 <p>Hier finden Sie die Handouts der Folien.</p>
 <p><img src="../Assets/images/pdf.jpg" alt="" /><a href="Assets/downloads/R4+Rmd.pdf" target="_blank">RMarkdown</a></p>
@@ -25,9 +28,9 @@
 <p><img src="../Assets/images/weblink.jpg" /><a href="https://r4ds.had.co.nz/r-markdown.html" target="_blank"> R for Data Science</a></p>
 <h2>Beispiele</h2>
 <p>Unser erstes Beispiel und der Rmd-Quellcode dazu:</p>
-<p><img src="../Assets/images/html.png" /> <a href="Assets/Rmd/example.html" target="_blank">Mit Knit in RStudio erzeugtes Beispiel</a></p>
 <p>Hier finden Sie ein weiteres HTML-Format, ein &quot;Notebook&quot;. Darin finden Sie den Code und rechts oben im Browser den Button &quot;Code&quot;. Sie k&ouml;nnen hier den Code ein- und ausblenden und insbesondere finden Sie den  Button &quot;Download Rmd&quot;, mit dem Sie den Quelltext abspeichern k&ouml;nnen! Anschlie&szlig;end haben Sie eine Datei mit der Endung &quot;Rmd&quot; auf Ihrem Rechnung. &Ouml;ffnen Sie diese Datei wieder in RStudio und Sie k&ouml;nnen die Datei reproduzieren oder ver&auml;ndern!</p>
-<p><img src="../Assets/images/html.png" alt="" /> <a href="Assets/Rmd/example.nb.html" target="_blank">Unser erstes Beispiel als Notebook</a></p>
+<p><img src="../Assets/images/html.png" /> <a href="https://mbrill.github.io/RMarkdown/example.html" target="_blank">Mit Knit in RStudio erzeugtes Beispiel</a></p>
+<p><img src="../Assets/images/html.png" alt="" /> <a href="https://mbrill.github.io/RMarkdown/example.nb.html" target="_blank">Unser erstes Beispiel als Notebook</a></p>
 <p><a href="#top"><img src="../Assets/images/totop.gif" alt="Nach oben" border="0"></a></p>
 <h2>Ausgabeformate f&uuml;r R Markdown</h2>
 <p>Neben HTML, PDF und Word k&ouml;nnen wir noch eine ganze Reihe von Ausgabeformaten erstellen. Auch hier lohnt sich ein Blick in den Auszug aus &quot;R for Data Science&quot; ganz oben auf dieser Seite!</p>
@@ -46,20 +49,22 @@
 <p><img src="../Assets/images/html.png" /><a href="Assets/Rmd/exampleDashboard.html" target="_blank">Dashboard</a></p>
 <h2>Interaktives HTML mit Shiny</h2>
 <p>Mit der Markup-L&ouml;sung der Dashboards k&ouml;nnen wir Dokumente erzeugen, die sich, wenn sich die Daten ver&auml;ndern, ebenfalls anpassen. Aber es geht noch besser - wir k&ouml;nnen HTML-Seiten erzeugen und R als Server-Proze&szlig; starten. Die L&ouml;sung daf&uuml;r ist <em>Shiny</em>. Mit R-Code erzeugen wir interaktive HTML-Seiten f&uuml;r unsere Anwender. Hier finden Sie Links zu den Tutorials und ein Beispiel. </p>
-<p>&nbsp;</p>
 <p><img src="../Assets/images/weblink.jpg" /><a href="https://shiny.rstudio.com/tutorial/" target="_blank">Tutorials zu Shiny</a></p>
 <p>Speichern Sie die Archive f&uuml;r die Beispiele immer in einem eigenen Verzeichnis. Wenn Sie diese Datei im Editor ge&ouml;ffnet haben finden Sie rechts oben im Editorfenster &quot;Run App&quot;. F&uuml;hren Sie damit die App aus! Oder setzen Sie in der Konsole das Arbeitsverzeichnis und starten Sie die App mit <em>runApp()</em>.</p>
 <p><img src="../Assets/images/download.png" alt="" /> <a href="Assets/Rmd/Diamonds.zip" target="_blank">Beispiel</a></p>
+<p><img src="../Assets/images/html.png" /> <a href="https://mbrill.github.io/RMarkdown/exampleIOSlides.html" target="_blank">IOslides</a></p>
+<p><img src="../Assets/images/html.png" /> <a href="https://mbrill.github.io/RMarkdown/exampleSlidy.html" target="_blank">Slidy</a></p>
+<p><img src="../Assets/images/download.png" alt="" /> <a href="Assets/Rmd/examplePresentations.zip">Quell-Dateien f&uuml;r die beiden Beispiele</a></p>
+<h2>Dashboards</h2>
+<p>Dashboards sind eine sehr gute M&ouml;glichkeit, um unseren Anwendern unsere Ergebnisse zu kommumizieren. Daf&uuml;r verwenden wir das Package <em>flexdashboard. </em> I</p>
+<p><img src="../Assets/images/html.png" /><a href="https://mbrill.github.io/RMarkdown/exampleDashboard.html" target="_blank">Dashboard</a></p>
+<p><img src="../Assets/images/download.png" alt="" /> <a href="Assets/Rmd/exampleDashboard.zip">Quelltext f&uuml;r das Dashboard</a></p>
 <p><a href="#top"><img src="../Assets/images/totop.gif" alt="Nach oben" border="0"></a></p>
 <hr>
 <font size="-2">
 <p><script type="text/javascript">getSemester()</script></p>
 <font size="-2"><p>Letzte &Auml;nderung: 
-<<<<<<< HEAD
-  <!-- #BeginDate format:Ge1 -->12.06.2020<!-- #EndDate --></p>
-=======
-  <!-- #BeginDate format:Ge1 -->22.03.2022<!-- #EndDate --></p>
->>>>>>> develop
+  <!-- #BeginDate format:Ge1 -->12.04.2022<!-- #EndDate --></p>
 </font>
 </body>
 </html>
