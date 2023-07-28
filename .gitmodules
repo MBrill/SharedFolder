@@ -4,3 +4,6 @@
 [submodule "Jupyter"]
 	path = Jupyter
 	url = https://github.com/MBrill/Jupyter.git
+[submodule "Shiny"]
+	path = Shiny
+	url = https://github.com/MBrill/Shiny.git
